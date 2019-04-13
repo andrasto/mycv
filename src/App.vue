@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <app-header></app-header>
+        <hr>
     </div>
 </template>
 
@@ -20,9 +21,13 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     div#app {
         width: 50%;
         margin: auto;
+    }
+
+    section.indent {
+        margin-left: 1rem;
     }
 </style>

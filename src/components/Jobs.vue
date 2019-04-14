@@ -23,19 +23,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    ul {
-        margin: 0;
-        padding-left: calc(1rem + 10px);
-        list-style-type: none;
-
-        li {
-            margin: 0.5rem 0;
-        }
-
-        li:before {
-            content: "-";
-            position: absolute;
-            margin-left: -10px;
-        }
-    }
+    
 </style>

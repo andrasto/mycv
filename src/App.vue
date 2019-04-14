@@ -7,6 +7,8 @@
         <app-technical-strengths></app-technical-strengths>
         <hr>
         <app-work-experience></app-work-experience>
+        <hr>
+        <app-language></app-language>
     </div>
 </template>
 
@@ -15,6 +17,7 @@ import appHeader from './components/Header.vue'
 import appEducation from './components/Education.vue'
 import appTechnicalStrengths from './components/TechnicalStrengths.vue'
 import appWorkExperience from './components/WorkExperience.vue'
+import appLanguage from './components/Language.vue'
 
 export default {
     name: 'app',
@@ -27,7 +30,8 @@ export default {
         appHeader,
         appEducation,
         appTechnicalStrengths,
-        appWorkExperience
+        appWorkExperience,
+        appLanguage
     }
 }
 </script>
@@ -56,6 +60,22 @@ export default {
                 padding: 0.5rem 0;
                 display: inline-block;
             }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding-left: calc(1rem + 10px);
+        list-style-type: none;
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        li:before {
+            content: "-";
+            position: absolute;
+            margin-left: -10px;
         }
     }
 </style>

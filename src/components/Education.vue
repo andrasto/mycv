@@ -2,40 +2,9 @@
     <div>
         <h2>Education</h2>
         <section class="indent">
-            <app-school>
-                <template v-slot:major>
-                    <p>Computer engineering</p>
-                </template>
-                <template v-slot:place>
-                    <p>Eötvös Loránd University, Budapest</p>
-                </template>
-                <template v-slot:timePeriod>
-                    <p>2015 - </p>
-                </template>
-            </app-school>
-
-            <app-school>
-                <template v-slot:major>
-                    <p>Computer engineering</p>
-                </template>
-                <template v-slot:place>
-                    <p>University of Debrecen, Debrecen</p>
-                </template>
-                <template v-slot:timePeriod>
-                    <p>2014 - 2015 (1 semester)</p>
-                </template>
-            </app-school>
-
-            <app-school>
-                <template v-slot:major>
-                    <p>Informatics</p>
-                </template>
-                <template v-slot:place>
-                    <p>Neumann János Secondary School, Eger</p>
-                </template>
-                <template v-slot:timePeriod>
-                    <p>2010 - 2014</p>
-                </template>
+            <app-school v-for="(school, index) in schools" 
+                        :key="index" 
+                        :school="school">
             </app-school>
         </section>
     </div>
@@ -45,6 +14,27 @@
 import appSchool from './School.vue'
 
 export default {
+    data() {
+        return {
+            schools: [
+                {
+                    major: 'Computer engineering',
+                    place: 'Eötvös Loránd University, Budapest',
+                    timePeriod: '2015 - '
+                },
+                {
+                    major: 'Computer engineering',
+                    place: 'University of Debrecen, Debrecen',
+                    timePeriod: '2014 - 2015 (1 semester)'
+                },
+                {
+                    major: 'Informatics',
+                    place: 'Neumann János Secondary School, Eger',
+                    timePeriod: '2010 - 2014'
+                },
+            ]
+        }
+    },
     components: {
         appSchool
     }

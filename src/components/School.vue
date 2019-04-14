@@ -1,18 +1,19 @@
 <template>
     <div class="grid-container">
         <div class="grid-item">
-            <b><slot name="major"></slot></b>
+            <b><p>{{ school.major }}</p></b>
             <p> - </p>
-            <slot name="place"></slot>
+            <p>{{ school.place }}</p>
         </div>
         <div class="grid-item">
-            <slot name="timePeriod"></slot>
+            <p>{{ school.timePeriod }}</p>
         </div>
     </div>
 </template>
 
 <script>
 export default {
+    props: ['school']
 }
 </script>
 

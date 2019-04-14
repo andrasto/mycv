@@ -18,11 +18,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-            programmingLanguages: ['Python', 'JavaScript', 'jQuery', 'Vue', 'NodeJS', Angu]
-        }
-    }
 }
 </script>
 

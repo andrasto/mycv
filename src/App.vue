@@ -3,12 +3,15 @@
         <app-header></app-header>
         <hr>
         <app-education></app-education>
+        <hr>
+        <app-technical-strengths></app-technical-strengths>
     </div>
 </template>
 
 <script>
 import appHeader from './components/Header.vue'
 import appEducation from './components/Education.vue'
+import appTechnicalStrengths from './components/TechnicalStrengths.vue'
 
 export default {
     name: 'app',
@@ -19,7 +22,8 @@ export default {
     },
     components: {
         appHeader,
-        appEducation
+        appEducation,
+        appTechnicalStrengths
     }
 }
 </script>

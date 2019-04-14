@@ -1,7 +1,7 @@
 <template>
     <div class="grid-container">
         <div class="grid-item">
-            <slot name="major"></slot>
+            <b><slot name="major"></slot></b>
             <p> - </p>
             <slot name="place"></slot>
         </div>

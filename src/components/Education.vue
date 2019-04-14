@@ -4,7 +4,7 @@
         <section class="indent">
             <app-school>
                 <template v-slot:major>
-                    <p><b>Computer engineering</b></p>
+                    <p>Computer engineering</p>
                 </template>
                 <template v-slot:place>
                     <p>Eötvös Loránd University, Budapest</p>
@@ -16,19 +16,19 @@
 
             <app-school>
                 <template v-slot:major>
-                    <p><b>Computer engineering</b></p>
+                    <p>Computer engineering</p>
                 </template>
                 <template v-slot:place>
                     <p>University of Debrecen, Debrecen</p>
                 </template>
                 <template v-slot:time>
-                    <p>2014 - 2015(1 semester)</p>
+                    <p>2014 - 2015 (1 semester)</p>
                 </template>
             </app-school>
 
             <app-school>
                 <template v-slot:major>
-                    <p><b>Informatics</b></p>
+                    <p>Informatics</p>
                 </template>
                 <template v-slot:place>
                     <p>Neumann János Secondary School, Eger</p>

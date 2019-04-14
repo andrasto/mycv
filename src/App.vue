@@ -53,6 +53,7 @@ export default {
         .grid-item {
             p {
                 margin: 0;
+                padding: 0.5rem 0;
                 display: inline-block;
             }
         }

@@ -2,23 +2,23 @@
     <div>
         <div class="grid-container">
             <div class="grid-item">
-                <b><slot name="jobTitle"></slot></b>
+                <b><p>{{ job.title }}</p></b>
             </div>
             <div class="grid-item">
-                <slot name="timePeriod"></slot>
+                <p>{{ job.timePeriod }}</p>
             </div>
         </div>
         <ul>
-            <li v-for="description in jobDescription" :key="description" v-html="description"></li>
+            <li v-for="description in job.description" 
+                :key="description" 
+                v-html="description"></li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-    props: {
-        jobDescription: Array
-    }
+    props: ['job']
 }
 </script>
 

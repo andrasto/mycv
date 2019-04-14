@@ -9,7 +9,7 @@
                 <template v-slot:place>
                     <p>Eötvös Loránd University, Budapest</p>
                 </template>
-                <template v-slot:time>
+                <template v-slot:timePeriod>
                     <p>2015 - </p>
                 </template>
             </app-school>
@@ -21,7 +21,7 @@
                 <template v-slot:place>
                     <p>University of Debrecen, Debrecen</p>
                 </template>
-                <template v-slot:time>
+                <template v-slot:timePeriod>
                     <p>2014 - 2015 (1 semester)</p>
                 </template>
             </app-school>
@@ -33,7 +33,7 @@
                 <template v-slot:place>
                     <p>Neumann János Secondary School, Eger</p>
                 </template>
-                <template v-slot:time>
+                <template v-slot:timePeriod>
                     <p>2010 - 2014</p>
                 </template>
             </app-school>

@@ -5,6 +5,8 @@
         <app-education></app-education>
         <hr>
         <app-technical-strengths></app-technical-strengths>
+        <hr>
+        <app-work-experience></app-work-experience>
     </div>
 </template>
 
@@ -12,6 +14,7 @@
 import appHeader from './components/Header.vue'
 import appEducation from './components/Education.vue'
 import appTechnicalStrengths from './components/TechnicalStrengths.vue'
+import appWorkExperience from './components/WorkExperience.vue'
 
 export default {
     name: 'app',
@@ -23,7 +26,8 @@ export default {
     components: {
         appHeader,
         appEducation,
-        appTechnicalStrengths
+        appTechnicalStrengths,
+        appWorkExperience
     }
 }
 </script>
@@ -40,5 +44,17 @@ export default {
 
     h2 {
         color: #78a6cf;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+
+        .grid-item {
+            p {
+                margin: 0;
+                display: inline-block;
+            }
+        }
     }
 </style>
